@@ -1,0 +1,39 @@
+.login-form {
+  border: solid 1px lighten(grey, 20%);
+  border-radius: 0.25rem;
+  width: 40%;
+  margin: 5rem auto;
+  padding:3rem;
+}
+.login-title {
+  font-size: 1.75rem;
+  padding-bottom:1rem;
+}
+.login-form {
+  label {
+    display:block;
+    margin:0.5rem 0;
+  }
+}
+
+%input-text {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px lighten(grey, 20%);
+}
+.login-email {
+  @extend %input-text;
+}
+.login-password {
+  @extend %input-text;
+}
+.login-button {
+  @extend %input-text;
+  background-color: $burnt-orange;
+  border: solid 1px grey;
+  color:white;
+  &:hover {
+    background-color: darken($burnt-orange, 5%);
+  }
+}

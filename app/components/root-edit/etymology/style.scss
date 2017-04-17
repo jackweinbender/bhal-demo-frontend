@@ -1,0 +1,23 @@
+.etymology-edit {
+  padding: 1rem;
+  background-color: $white;
+}
+label {
+  display:block;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: $serif
+}
+
+.block-editable {
+  padding:1rem;
+  border-bottom: solid 2px $light-grey;
+}
+
+.content-editable {
+  @extend %content-editable-textarea;
+}
+
+.ember-content-editable {
+  @extend .content-editable;
+}

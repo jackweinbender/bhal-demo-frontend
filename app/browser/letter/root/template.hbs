@@ -1,0 +1,23 @@
+<div class="browser-content">
+  <h1 class="entry-title">
+    <span class="hebrew">&rlm;{{model.root}}</span>
+    {{#if model.homonymNumber}}
+      <span class="entry-title-homonym">
+        &lrm;[{{model.homonymNumber}}]
+      </span>
+    {{/if}}
+    <span>&ndash;</span>
+    <span>{{model.basicDefinition}}</span>
+  </h1>
+  {{#if session.isLoggedIn}}
+    {{#root-edit/nav}}
+      {{#link-to 'browser.letter.root.show' model}}Preview{{/link-to}}
+      {{#link-to 'browser.letter.root.edit' model}}Edit{{/link-to}}
+      {{#link-to 'browser.letter.root.etymology' model}}Etymology{{/link-to}}
+      {{#link-to 'browser.letter.root.related' model}}Related Entries{{/link-to}}
+    {{/root-edit/nav}}
+  {{/if}}
+
+  {{outlet}}
+
+</div>

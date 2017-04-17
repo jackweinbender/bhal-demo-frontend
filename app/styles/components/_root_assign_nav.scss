@@ -1,0 +1,28 @@
+.page-navigation {
+  overflow:auto;
+}
+%pagination {
+  @extend %label;
+  text-decoration: none;
+  background-color:#555;
+  color:white;
+  &:hover {
+    background-color: darken(#555, 10%);
+  }
+}
+.next-page {
+  @extend %pagination;
+  float:right;
+}
+.previous-page {
+  @extend %pagination;
+  float:left;
+}
+.save-all {
+  @extend %pagination;
+  float:right;
+  background-color:#009966;
+    &:hover {
+    background-color: darken(#009966, 5%);
+  }
+}

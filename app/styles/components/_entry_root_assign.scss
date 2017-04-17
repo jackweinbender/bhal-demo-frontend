@@ -1,0 +1,126 @@
+.editor-content {
+  padding:1rem 1rem 1rem 11rem;
+}
+
+.editor {
+  @extend %content;
+  padding:1rem;
+}
+
+.assign-roots-results {
+  border:solid 1px #ccc;
+  border-radius:0.25rem;
+  padding:0 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.root-assign {
+  width:100%;
+  background-color:#eee;
+  padding:0.25rem 0.5rem;
+  margin:0.5rem 0;
+  border:solid 1px #ccc;
+}
+
+.root-assign {
+  .entry-number{
+    display: inline-block;
+    font-family:monospace;
+    width:4rem;
+  }
+}
+.is-xref {
+  background-color:#fcfcfc;
+  border: solid 1px #eee;
+  color: #bbb;
+}
+.is-root-entry {
+  background-color:#F0FFED;
+  border: solid 1px #bbb;
+}
+.is-commented {
+  background-color:#e3d3d3;
+  border: solid 1px red;
+}
+.page-form {
+  margin:0;
+  padding:0;
+  float:right;
+}
+.input-page {
+  @extend %input;
+  height:2.25rem;
+  width:5rem;
+  margin:0 0.5rem;
+  float:left;
+}
+.go-to-page {
+  @extend %pagination;
+  float:left;
+}
+.input-word {
+  @extend %hebrew;
+  @extend %input;
+  width:8rem;
+}
+.input-root {
+  @extend %hebrew;
+  @extend %input;
+  width:6rem;
+}
+.input-homonym {
+  @extend %input;
+  width:4rem;
+}
+.input-note {
+  @extend %input;
+  width:12rem;
+}
+
+%checkbox {
+  @extend %hebrew;
+  height:2.5rem;
+  width:3rem;
+  border:solid 1px #ccc;
+  border-radius:0.25rem;
+  padding:0.45rem;
+}
+%suggest {
+  background-color:#ddd;
+}
+%is {
+  border: solid 1px #00BB70;
+}
+.tsade {
+  @extend %checkbox;
+}
+.suggest-tsade {
+  @extend %suggest;
+}
+.is-corrected-tsade {
+  @extend %is;
+}
+.reconstructed {
+  @extend %checkbox;
+}
+.suggest-reconstructed {
+  @extend %suggest;
+}
+.is-reconstructed {
+  @extend %is;
+}
+.xref {
+  @extend %checkbox;
+}
+.suggest-xref {
+  @extend %suggest;
+}
+.root-entry {
+  @extend %checkbox;
+  font-family: sans-serif;
+  font-size: 1em;
+  padding: 0.66rem 0.45rem;
+}
+.suggest-root-entry {
+  @extend %suggest;
+}

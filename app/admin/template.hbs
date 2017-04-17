@@ -1,0 +1,10 @@
+<div class="content">
+  {{outlet 'content'}}
+</div>
+<div class="dashboard-nav-wrapper">
+    <nav class="admin-nav">
+      {{#link-to 'utilities.cleanup-entries.page' 1}}Root Cleanup{{/link-to}}
+      {{#link-to 'utilities.link-entries'}}Link Entries{{/link-to}}
+      {{#link-to 'admin.users'}}Users{{/link-to}}
+    </nav>
+</div>

@@ -1,0 +1,21 @@
+{{#root-edit/etymology}}
+  <div class="block-editable">
+    <label>Discussion:</label>
+    {{content-editable value=etymology.discussion
+                     placeholder="Discussion"
+                     type="text"}}
+  </div>
+  <div class="block-editable">
+    <label>Literature:</label>
+    {{content-editable value=etymology.literature
+                     placeholder="Literature"
+                     type="text"}}
+  </div>
+
+  <div class="block-editable">
+  <label>Cognates to the Biblical Hebrew Root</label>
+    {{#each model.cognates as |cognate|}}
+      {{root-edit/etymology/cognate model=cognate}}
+    {{/each}}
+  </div>
+{{/root-edit/etymology}}

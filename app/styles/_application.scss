@@ -1,0 +1,29 @@
+/* Styles for Application template */
+
+.header {
+  z-index:999;
+  box-shadow: 0px -2px 10px #000;
+  background-color:#c50;
+  height:4rem;
+}
+
+.header__title {
+  float:left;
+  padding:1rem;
+  font-size:1.75rem;
+  letter-spacing: 0px;
+  font-family:"Linux Libertine O", "Times New Roman", Serif;
+  color:white;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.login-link {
+  float:right;
+  height:4rem;
+  padding:1.5rem;
+  color:white;
+  text-decoration:none;
+  &:hover {
+    background-color: darken($burnt-orange, 10%);
+  }
+}

@@ -1,0 +1,27 @@
+.dashboard-nav-wrapper{
+  @extend .sidebar--wrapper !optional;
+  width: 10rem;
+}
+.admin-nav {
+    box-shadow: -2px 0px 10px #000;
+    color:white;
+    background-color: #333;
+    height:100%;
+    z-index: 10;
+}
+
+.admin-nav{
+  a {
+    display:inline-block;
+    width:100%;
+    padding:0.75rem;
+    color:white;
+    text-decoration:none;
+    &:hover {
+      background-color:$teal;
+    }
+  }
+  .active {
+    background-color:$teal;
+  }
+}

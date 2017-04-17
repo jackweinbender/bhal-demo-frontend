@@ -1,0 +1,13 @@
+& {
+  position:absolute;
+    left:3rem;
+  overflow:auto;
+  width:12rem;
+  height:100%;
+  background-color:#ccc;
+  color:$black;
+
+  &:hover{
+    background-color:#c2c2c2;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="user-viewer">
+  <h3>{{model.firstName}} {{model.lastName}} ({{model.role}})</h3>
+  <p><a href="mailto:{{model.email}}">{{model.email}}</a></p>
+  <p>
+    {{#if model.deletePrompt}}
+    <button {{action 'delete'}} name="button">Confirm Delete</button>
+    {{else}}
+    <button {{action 'prompt'}} name="button">Delete User</button>
+    {{/if}}
+  </p>
+  {{outlet}}
+</div>

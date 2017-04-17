@@ -1,0 +1,66 @@
+@mixin button-hover($color) {
+  background-color: $color;
+
+  &:hover{
+    background-color: darken($color, 5%);
+  }
+}
+
+%input {
+  padding:0.3rem;
+  width:25%;
+  height:2.5rem;
+  border:solid 1px #ccc;
+  border-radius:0.25rem;
+  background-color: $white;
+
+  &:disabled {
+    background: $xlight-grey;
+  }
+}
+%content-editable-textarea {
+  padding:0.5rem;
+  min-height:4rem;
+  width:100%;
+  height:auto;
+  border: solid 1px $white;
+  border-radius:0.25rem;
+  background-color: $white;
+  font-size: 1.25rem;
+  font-family: $serif;
+
+  &:focus{
+    outline: none;
+    border: solid 1px $teal;
+    background-color: $white;
+  }
+  &:hover {
+    background-color: $xlight-grey;
+  }
+  &:focus:hover{
+    background-color:$white;
+  }
+}
+%label {
+  padding:0.5rem 1rem;
+  border:solid 1px #ccc;
+  border-radius:0.25rem;
+}
+
+%fieldset {
+  border: solid 1px $grey;
+  border-radius: 0.25rem;
+  font-family: $serif;
+}
+
+%legend {
+  color:darken($grey, 30%);
+}
+
+%button {
+  padding:0.25rem 1rem;
+  border:solid 1px #ccc;
+  border-radius:0.25rem;
+
+  @include button-hover($grey);
+}

@@ -1,0 +1,16 @@
+.definition-block {
+  padding:1rem;
+
+  h2 {
+    margin:0;
+  }
+  .text-input {
+    @extend %input;
+    width:50%;
+  }
+  .textarea-input {
+    @extend %input;
+    width:100%;
+    min-height: 12em;
+  }
+}

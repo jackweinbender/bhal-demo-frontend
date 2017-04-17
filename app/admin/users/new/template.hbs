@@ -1,0 +1,12 @@
+<div class="">
+  <form class="" action="index.html" method="post">
+    <p>{{input type=text value=firstName placeholder="First Name"}}</p>
+    <p>{{input type=text value=lastName placeholder="Last Name"}}</p>
+    <p>{{input type=text value=role placeholder="Role (admin, gra, faculty)"}}</p>
+    <p>{{input type='email' value=email placeholder="Email Address"}}</p>
+    <p>{{input type='password' value=password placeholder="Password"}}</p>
+    <button {{action 'saveNew'}} name="button">Save New User</button>
+  </form>
+</div>
+
+{{outlet}}

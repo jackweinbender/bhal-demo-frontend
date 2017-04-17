@@ -1,0 +1,11 @@
+<div class="content">
+  {{outlet 'content'}}
+</div>
+<div class="sidebar">
+  {{#browser/letters-wrapper}}
+    {{#each model key="letter" as |letter|}}
+      {{browser/letter-link letter=letter}}
+    {{/each}}
+  {{/browser/letters-wrapper}}
+  {{outlet}}
+</div>

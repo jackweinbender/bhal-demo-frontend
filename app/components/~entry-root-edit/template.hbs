@@ -1,0 +1,16 @@
+<div class="root-assign
+  {{if entry.isXref 'is-xref'}}
+  {{if entry.isRootEntry 'is-root-entry'}}
+  {{if entry.rootAssignNote 'is-commented'}}">
+  <span class="entry-number">{{root.root}}:</span>
+  <span class="input">{{input value=entry.word type="text" class="input-word" placeholder="word"}}</span>
+  <span class="reconstructed
+    {{if entry.isReconstructed ' is-reconstructed'}}{{if entry.suggestReconstructed ' suggest-reconstructed'}}" title="Reconstructed Form">*{{input checked=entry.isReconstructed type="checkbox"}}</span>
+  <span class="input">{{input value=entry.root type="text" class="input-root" placeholder="קטל"}}</span>
+  <span class="input">{{input value=entry.homonymNumber type="text" class="input-homonym" placeholder="#"}}</span>
+  <span class="tsade
+    {{if entry.suggestTsade ' suggest-tsade'}}{{if entry.correctedTsade ' is-corrected-tsade'}}" title="Mismatched Ḥet / Tsade">צ:{{input checked=entry.correctedTsade type="checkbox"}}</span>
+    <span class="xref" title="Cross Ref">» {{input checked=entry.isXref type="checkbox"}}</span>
+    <span class="root-entry" title="Root Entry">√ {{input checked=entry.isRootEntry type="checkbox"}}</span>
+    <span class="input">{{input value=entry.rootAssignNote type="text" class="input-note" placeholder="Note"}}</span>
+</div>

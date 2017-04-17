@@ -1,0 +1,42 @@
+
+
+$sans-serif: 'Helvetica', 'Times New Roman', Serif;
+$serif: 'Linux Libertine O', 'Times New Roman', serif;
+$hebrew: 'SBL Hebrew', 'Times New Roman', Serif;
+$greek: 'SBL Greek', 'Times New Roman', Serif;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans-serif;
+}
+
+%hebrew {
+  font-family: $hebrew;
+  font-size:1.2em;
+
+  unicode-bidi: isolate;
+  direction: rtl;
+}
+.hebrew {
+  @extend %hebrew;
+}
+
+.greek {
+  font-family: $greek;
+}
+
+.teal {
+  color: $teal;
+  background-color: $grey;
+}
+
+.orange {
+  color:$burnt-orange;
+  background-color: $grey;
+}
+
+p {
+  font-family: $serif;
+  font-size: 1.41rem;
+  line-height: 1.3;
+}

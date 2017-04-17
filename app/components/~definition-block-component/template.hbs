@@ -1,0 +1,19 @@
+<div class="definition-block {{if isLoggedIn 'editable'}} {{if isEditing 'editing'}}">
+  {{#if isEditing}}
+  <form class="definition-block" {{action 'save' on="submit"}}>
+    <p>{{input value=block.title class="text-input"}}</p>
+    <p>{{textarea value=block.body class="textarea-input"}}</p>
+    <div class="save-controls">
+      <button {{action 'toggleEdit'}} class="cancel">Cancel</button>
+      {{input type='submit' name="save" class="save" value="Save"}}
+    </div>
+  </form>
+  {{else}}
+  <div {{action 'toggleEdit'}} class="definition-block">
+    <h2>{{block.title}}</h2>
+    <p>
+      {{{block.bodyHTML}}}
+    </p>
+  </div>
+  {{/if}}
+</div>

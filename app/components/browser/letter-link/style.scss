@@ -1,0 +1,25 @@
+.letter__item {
+  display:block;
+  padding:0.25rem;
+  border:solid 1px #444;
+  border-right: solid 1px #222;
+  border-bottom: solid 1px #222;
+  color:white;
+  text-align: center;
+  text-decoration:none;
+  font-size: 1.75rem;
+  font-family: "SBL Hebrew", "Times New Roman", Serif;
+
+  &:hover{
+    background-color: #3a3a3a;
+  }
+}
+
+.active{
+  background-color: $teal;
+  text-shadow: 0px 0px 5px #000;
+
+  &:hover {
+    background-color:#004578;
+  }
+}

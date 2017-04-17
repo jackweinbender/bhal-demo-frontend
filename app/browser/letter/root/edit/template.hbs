@@ -1,0 +1,24 @@
+{{#root-edit/edit}}
+  <form class="root-header-form" {{action 'save' on="submit"}}>
+    <p><label class="text-label">Root:</label>{{input value=root.root class="text-input hebrew-input"}}</p>
+    <p><label class="text-label">Basic Def:</label>{{input value=root.basicDefinition class="text-input"}}</p>
+    <fieldset>
+      <legend>Unique Identifiers: Edit with Care</legend>
+      {{!--<p><label class="text-label">Homonym #</label>{{#x-select value=model.homonymNumber class="select" disabled=editable}}
+          {{#x-option value=0}}--{{/x-option}}
+          {{#x-option value=1}}I{{/x-option}}
+          {{#x-option value=2}}II{{/x-option}}
+          {{#x-option value=3}}III{{/x-option}}
+          {{#x-option value=4}}IV{{/x-option}}
+          {{#x-option value=5}}V{{/x-option}}
+        {{/x-select}}</p>--}}
+      <p><label class="text-label">Translit.:</label>{{input value=model.display class="text-input" disabled=editable}}</p>
+
+    {{#if editing}}
+      <p><button class="save" {{action 'updateId'}}>Save</button></p>
+    {{else}}
+        <p><button class="edit" {{action 'edit'}}>Edit</button></p>
+    {{/if}}
+    </fieldset>
+  </form>
+{{/root-edit/edit}}

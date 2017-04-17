@@ -1,0 +1,9 @@
+{{#link-to 'browser.letter.root' root.id classNames="root__item"}}
+  <div class="root__title">
+    {{root.root}}
+    {{#if root.homonymNumber}}
+      <span class="root__title-homonym">[{{root.homonymNumber}}]</span>
+    {{/if}}
+  </div>
+  <div class="root__gloss">{{root.id}}</div>
+{{/link-to}}

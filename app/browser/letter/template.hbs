@@ -1,0 +1,9 @@
+{{!-- <div class="root__filter">
+  <input class="root__filter__input" type="text" placeholder="Filter"/>
+</div> --}}
+{{#browser/roots-wrapper}}
+  {{#each sortedRoots as |root|}}
+      {{browser/root-link root=root}}
+  {{/each}}
+{{/browser/roots-wrapper}}
+{{outlet}}

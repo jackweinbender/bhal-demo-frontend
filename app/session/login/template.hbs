@@ -1,0 +1,10 @@
+<div class="content">
+  <div class="login-form">
+    <div class="login-title">Editor Login</div>
+    <form {{action 'login' on="submit"}}>
+      <label for="email">{{input value=email type="text" placeholder="Email" class="login-email"}}</label>
+      <label for="password">{{input value=password type="password" placeholder="Password" class="login-password"}}</label>
+      {{input type="submit" value="Log In" class="login-button"}}
+    </form>
+  </div>
+</div>

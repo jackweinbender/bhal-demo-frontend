@@ -1,0 +1,26 @@
+.root-edit-nav {
+  font-size: 0;
+  a {
+    display:inline-block;
+    padding:1rem 0.25rem;
+    width: 20%;
+    border-right: solid 1px $grey;
+    border-bottom: solid 1px $grey;
+    background-color: $xlight-grey;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    &:hover {
+      background-color: $white;
+      text-decoration: underline;
+    }
+
+  }
+
+  .active {
+    border-bottom:solid 1px $white;
+    background-color: $white;
+  }
+
+}

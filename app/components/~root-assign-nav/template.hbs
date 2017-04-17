@@ -1,0 +1,10 @@
+<div class="page-navigation">
+  <button {{action 'prevPage'}} class="previous-page">« Prev</button>
+  <button {{action 'nextPage'}} class="next-page">Next »</button>
+  <button {{action 'saveAll'}} class="save-all">Save</button>
+  <form class="page-form" {{action 'goToPage' on="submit"}}>
+    {{input class="go-to-page" type="submit" value="Go to Page"}}
+    {{input class="input-page" value=page type="text"}}
+  </form>
+</div>
+{{yield}}

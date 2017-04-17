@@ -1,0 +1,40 @@
+.root__item {
+  position: relative;
+  display:block;
+  padding:0.5rem 1rem 0.5rem 0.5rem;
+  border:solid 1px #eee;
+  border-right: solid 1px #aaa;
+  border-bottom: solid 1px #aaa;
+  background-color:#ddd;
+  color:black;
+  text-decoration:none;
+  direction: rtl;
+
+  &:hover{
+    background-color:#d2d2d2;
+  }
+}
+.root__title-homonym {
+  padding-right:0.5rem;
+  color:$less-light-grey;
+  text-overflow:ellipsis;
+  text-shadow:0px 1px 0px #eee;
+  font-size: 0.75em;
+}
+.root__gloss {
+  overflow: auto;
+  padding-right:5px;
+  height: 1.25rem;
+  color:#444;
+  text-overflow:ellipsis;
+  text-shadow:0px 1px 0px #eee;
+  white-space: nowrap;
+  font-style: italic;
+  }
+
+.root__title {
+  height: 2.25rem;
+  text-shadow:0px 1px 0px #ddd;
+  font-size:1.75rem;
+  font-family:"SBL Hebrew", "Times New Roman", Serif;
+}

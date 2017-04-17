@@ -1,0 +1,56 @@
+.root-edit-head {
+  padding:1rem;
+  background-color: $white;
+
+  .hebrew-input{
+    font-size:1.9rem;
+    font-family: "SBL Hebrew", "Times New Roman", Serif;
+  }
+
+  .root-header-form {
+    padding:1rem 30% 1rem 0;
+  }
+
+  .text-label {
+    display: inline-block;
+    padding-right: 1rem;
+    width: 30%;
+    text-align: right;
+  }
+
+  .text-input {
+    width: 70%;
+
+    @extend %input;
+  }
+
+  .select {
+    background-color: $white;
+
+    @extend %input;
+  }
+
+  .save, .edit {
+    float:right;
+
+    @extend %button;
+  }
+
+  .save {
+    color:$white;
+
+    @include button-hover($teal);
+  }
+
+  .edit {
+
+  }
+
+  fieldset {
+    @extend %fieldset;
+  }
+
+  legend {
+    @extend %legend;
+  }
+}

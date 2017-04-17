@@ -1,0 +1,18 @@
+{{
+  root-assign-nav
+  page=page
+  saveAll="saveAll"
+  goToPage="goToPage"
+}}
+<div class="assign-roots-results">
+  {{#each model as |entry|}}
+    {{entry-root-edit entry=entry}}
+  {{/each}}
+</div>
+{{
+  root-assign-nav
+  page=page
+  saveAll="saveAll"
+  goToPage="goToPage"
+}}
+{{outlet}}

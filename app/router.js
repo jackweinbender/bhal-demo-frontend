@@ -16,9 +16,9 @@ export default Router.map(function() {
     this.route('login');
     this.route('logout');
   });
-  this.route('browser', function() {
-    this.route('letter', {path: '/:letter'}, function() {
-      this.route('root', {path: '/:root'}, function() {
+  this.route('browser', {path: '/'}, function() {
+    this.route('letter', {path: '/browser/:letter'}, function() {
+      this.route('root', {path: '/browser/:root'}, function() {
         this.route('show', { path: '/' });
         this.route('edit');
         this.route('etymology');

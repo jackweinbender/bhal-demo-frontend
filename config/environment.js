@@ -44,6 +44,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.contentSecurityPolicy = {
+      'connect-src': "'self' https://pure-hollows-12333.herokuapp.com"
+    }
     ENV.APP.API_HOST = 'https://pure-hollows-12333.herokuapp.com';
   }
 

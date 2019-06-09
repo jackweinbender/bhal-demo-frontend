@@ -2,7 +2,7 @@
 
 This project was my initial prototype for the front end of the Biblical Hebrew and Aramaic Lexicon (BHAL) project (the API repo [can be found here](https://github.com/jackweinbender/bhal-demo-api)). This prototype sketched the basic functionality of how the editorial team would go about its task. I spent a lot of time thinking about the ergonomics of the processes that the editorial team had established and tried to make this UI compliment those processes as best as I could.
 
-![bhal-edit](https://user-images.githubusercontent.com/1544859/59160973-19945f80-8aa2-11e9-9054-9d62011e62d4.png)
+![bhal-edit](https://user-images.githubusercontent.com/1544859/59161030-da1a4300-8aa2-11e9-8adf-ec8b342e6e7c.png)
 
 ## About the Project
 
